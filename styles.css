@@ -160,3 +160,16 @@ body {
   color: var(--accent); /* mantém o laranja */
   font-weight: 700;
 }
+.site-name {
+  font-family: 'Oswald', sans-serif; /* mesma fonte dos títulos */
+  font-weight: 700;
+  font-size: 1.4rem; /* igual ao logo do index */
+  color: var(--accent); /* laranja */
+  vertical-align: middle;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre logo e nome */
+}
+
