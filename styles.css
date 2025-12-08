@@ -5,6 +5,7 @@
   --bg: #0c111b;
   --card: #121824;
   --accent: #ff4d00;
+  --accent-hover: #ff6a2a;
   --text: #e6eef6;
   --muted: #98a2b3;
   --radius: 12px;
@@ -46,21 +47,28 @@ body {
   align-items: center;
 }
 
-/* Ajuste definitivo da logo */
+/* Logo e título */
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--accent) !important; /* força laranja */
+}
+
 .logo-square {
-  display: inline-block;
-  width: 40px;  /* tamanho fixo */
+  width: 40px;  /* tamanho da logo */
   height: 40px;
-  object-fit: contain;
-  margin-right: 10px; /* espaço entre logo e título */
+  margin-right: 10px; /* espaço entre logo e texto */
 }
 
 .logo-square img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 6px;
 }
-
 
 /* ===========================
    NAV MENU
@@ -75,12 +83,12 @@ body {
   margin-left: 20px;
   text-decoration: none;
   font-weight: 600;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .nav a:hover,
 .nav a.active {
-  color: var(--text);
+  color: var(--accent);
 }
 
 /* Corrige scroll ao clicar no menu */
@@ -111,52 +119,79 @@ body {
   padding: 22px;
   margin-bottom: 20px;
   border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
 }
 
 .card h2 {
   margin-top: 0;
 }
 
-.me
-
-.logo-square {
-  display: inline-block;
-  width: 32px;  /* tamanho fixo */
-  height: 32px;
-  margin-left: 8px;
-  background: #00000022;
-  border-radius: 6px;
-  padding: 3px;
-  vertical-align: middle;
-}
-
-.logo-square img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.tabela-f1 th,
-.tabela-f1 td {
-  padding: 12px 15px; /* aumenta o espaço interno das células */
-  text-align: center;
-}
-.logo {
-  color: var(--accent) !important; /* força a cor laranja */
-}
+/* ===========================
+   NOTÍCIAS / LINKS
+=========================== */
 .leia-mais {
-  color: var(--accent); /* laranja do site */
+  color: var(--accent);
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .leia-mais:hover {
-  color: #ff6a2a; /* tom mais claro ou efeito ao passar o mouse */
+  color: var(--accent-hover);
 }
-.logo {
-  font-family: 'Inter', system-ui, sans-serif !important;
-  color: var(--accent); /* mantém o laranja */
+
+/* ===========================
+   TABELAS
+=========================== */
+.tabela-f1 th,
+.tabela-f1 td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.styled-table th {
+  background: rgba(255,77,0,0.2);
+  color: var(--text);
   font-weight: 700;
+}
+
+.styled-table td {
+  color: var(--text);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.styled-table tr:hover {
+  background: rgba(255,77,0,0.1);
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+@media (max-width: 600px) {
+  .nav a {
+    margin-left: 12px;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .logo-square {
+    width: 32px;
+    height: 32px;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 10px;
+  }
 }
