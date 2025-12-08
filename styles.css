@@ -1,3 +1,6 @@
+/* ===========================
+   VARIÁVEIS E BASE
+=========================== */
 :root {
   --bg: #0c111b;
   --card: #121824;
@@ -15,6 +18,9 @@ body {
   color: var(--text);
 }
 
+/* ===========================
+   CONTAINER
+=========================== */
 .container {
   width: calc(100% - 40px);
   max-width: var(--container);
@@ -22,6 +28,9 @@ body {
   padding: 20px 0;
 }
 
+/* ===========================
+   HEADER
+=========================== */
 .header {
   background: rgba(255, 255, 255, 0.03);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
@@ -37,6 +46,7 @@ body {
   align-items: center;
 }
 
+/* LOGO TEXTO OU LOGO IMAGEM */
 .logo {
   margin: 0;
   font-size: 1.4rem;
@@ -44,17 +54,41 @@ body {
   font-weight: 700;
 }
 
+.logo-square {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+/* ===========================
+   NAV MENU
+=========================== */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav a {
   color: var(--muted);
   margin-left: 20px;
   text-decoration: none;
   font-weight: 600;
+  transition: .2s;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   color: var(--text);
 }
 
+/* Corrige scroll ao clicar no menu */
+#historia, #pilotos, #noticias {
+  scroll-margin-top: 90px;
+}
+
+/* ===========================
+   HERO / DESTAQUE
+=========================== */
 .hero {
   background: linear-gradient(90deg, rgba(255, 77, 0, 0.1), transparent);
   padding: 25px;
@@ -66,6 +100,9 @@ body {
   margin: 0 0 8px 0;
 }
 
+/* ===========================
+   CARDS
+=========================== */
 .card {
   background: var(--card);
   border-radius: var(--radius);
@@ -78,16 +115,58 @@ body {
   margin-top: 0;
 }
 
-.news h3 {
-  margin: 0 0 5px 0;
-}
-
 .meta {
   color: var(--muted);
   font-size: .9rem;
   margin-bottom: 12px;
 }
 
+/* ===========================
+   TABELA 2025
+=========================== */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.styled-table th {
+  background: rgba(255,255,255,0.04);
+  text-align: left;
+  padding: 14px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.styled-table td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: var(--muted);
+}
+
+.styled-table tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* ===========================
+   LINKS (leia mais, etc)
+=========================== */
+.leia-mais {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: .2s;
+}
+
+.leia-mais:hover {
+  color: #ff6a2a;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
 .footer {
   text-align: center;
   padding: 25px;
@@ -96,31 +175,26 @@ body {
   margin-top: 40px;
 }
 
-/* ======= LEIA MAIS ======= */
-.leia-mais {
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+@media (max-width: 600px) {
+  .nav a {
+    margin-left: 12px;
+    font-size: 0.9rem;
+  }
 
-.leia-mais:hover {
-  color: #ff6a2a;
-}
+  .logo {
+    font-size: 1.2rem;
+  }
 
-/* Logo quadrada maior */
-.logo-square {
-    width: 80px;
-    height: auto;
-}
+  .logo-square {
+    width: 32px;
+    height: 32px;
+  }
 
-/* Correção de alinhamento do menu */
-.nav {
-  display: flex;
-  align-items: center;
-}
-/* Corrige o scroll dos links do menu */
-#historia, #pilotos, #noticias {
-  scroll-margin-top: 90px; /* altura do header */
+  .styled-table th,
+  .styled-table td {
+    padding: 10px;
+  }
 }
