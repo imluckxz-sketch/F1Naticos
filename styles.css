@@ -9,7 +9,6 @@
   font-family: 'Inter', system-ui, sans-serif;
 }
 
-/* Base */
 body {
   margin: 0;
   background: var(--bg);
@@ -23,7 +22,6 @@ body {
   padding: 20px 0;
 }
 
-/* Header */
 .header {
   background: rgba(255, 255, 255, 0.03);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
@@ -57,7 +55,6 @@ body {
   color: var(--text);
 }
 
-/* Hero */
 .hero {
   background: linear-gradient(90deg, rgba(255, 77, 0, 0.1), transparent);
   padding: 25px;
@@ -69,7 +66,6 @@ body {
   margin: 0 0 8px 0;
 }
 
-/* Cards */
 .card {
   background: var(--card);
   border-radius: var(--radius);
@@ -82,7 +78,6 @@ body {
   margin-top: 0;
 }
 
-/* Notícias */
 .news h3 {
   margin: 0 0 5px 0;
 }
@@ -93,11 +88,23 @@ body {
   margin-bottom: 12px;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 25px;
   color: var(--muted);
   font-size: .9rem;
   margin-top: 40px;
+}
+
+/* ======= LEIA MAIS ======= */
+.leia-mais {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.leia-mais:hover {
+  color: #ff6a2a;
 }
