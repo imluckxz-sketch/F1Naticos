@@ -155,3 +155,8 @@ body {
 .leia-mais:hover {
   color: #ff6a2a; /* tom mais claro ou efeito ao passar o mouse */
 }
+.logo {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  color: var(--accent); /* mantém o laranja */
+  font-weight: 700;
+}
