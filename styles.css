@@ -143,3 +143,15 @@ body {
 .logo {
   color: var(--accent) !important; /* força a cor laranja */
 }
+.leia-mais {
+  color: var(--accent); /* laranja do site */
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: .2s;
+}
+
+.leia-mais:hover {
+  color: #ff6a2a; /* tom mais claro ou efeito ao passar o mouse */
+}
