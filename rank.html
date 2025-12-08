@@ -2,181 +2,82 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabela Pilotos F1 2025</title>
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: var(--card);
-      border-radius: var(--radius);
-      overflow: hidden;
-      margin-top: 20px;
-    }
-
-    th, td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-
-    th {
-      background: rgba(255, 77, 0, 0.2);
-    }
-
-    tr:hover {
-      background: rgba(255,255,255,0.05);
-    }
-  </style>
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela 2025 – F1Naticos</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header class="header">
   <div class="container header-content">
-    <img src="img/mlk.png" alt="Logo MLK" class="logo-square">
+    <h1 class="logo">
+      F1Naticos
+      <span class="logo-square">
+        <img src="imgs/mlk.png.png" alt="Logo MLK">
+      </span>
+    </h1>
 
     <nav class="nav">
       <a href="index.html">Início</a>
-      <a href="datas.html">Datas</a>
-      <a href="Tabela.html">Tabela</a>
+      <a href="datas.html">Calendário</a>
+      <a class="active" href="tabela.html">Tabela</a>
     </nav>
   </div>
 </header>
 
-<div class="container">
+<main class="container">
 
-  <section class="hero">
-    <h2>Pilotos e Equipes da Fórmula 1 — Temporada 2025</h2>
-    <p>Lista completa dos 20 pilotos e suas respectivas equipes.</p>
-  </section>
+  <section class="card">
+    <h2>Pilotos e Equipes – Temporada 2025</h2>
 
-  <div class="card" id="pilotos">
-    <table>
-      <tr>
-        <th>Número</th>
-        <th>Piloto</th>
-        <th>País</th>
-        <th>Equipe</th>
-      </tr>
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Piloto</th>
+          <th>País</th>
+          <th>Equipe</th>
+        </tr>
+      </thead>
+      <tbody>
 
-      <tr><td>1</td><td>Max Verstappen</td><td>🇳🇱 Holanda</td><td>Red Bull Racing</td></tr>
-      <tr><td>44</td><td>Lewis Hamilton</td><td>🇬🇧 Reino Unido</td><td>Ferrari</td></tr>
-      <tr><td>55</td><td>Carlos Sainz</td><td>🇪🇸 Espanha</td><td>Williams</td></tr>
-      <tr><td>63</td><td>George Russell</td><td>🇬🇧 Reino Unido</td><td>Mercedes</td></tr>
-      <tr><td>16</td><td>Charles Leclerc</td><td>🇲🇨 Mônaco</td><td>Ferrari</td></tr>
-      <tr><td>4</td><td>Lando Norris</td><td>🇬🇧 Reino Unido</td><td>McLaren</td></tr>
-      <tr><td>81</td><td>Oscar Piastri</td><td>🇦🇺 Austrália</td><td>McLaren</td></tr>
-      <tr><td>14</td><td>Fernando Alonso</td><td>🇪🇸 Espanha</td><td>Aston Martin</td></tr>
-      <tr><td>18</td><td>Lance Stroll</td><td>🇨🇦 Canadá</td><td>Aston Martin</td></tr>
-      <tr><td>20</td><td>Kevin Magnussen</td><td>🇩🇰 Dinamarca</td><td>Haas</td></tr>
-      <tr><td>27</td><td>Nico Hülkenberg</td><td>🇩🇪 Alemanha</td><td>Kick Sauber</td></tr>
-      <tr><td>22</td><td>Yuki Tsunoda</td><td>🇯🇵 Japão</td><td>RB</td></tr>
-      <tr><td>40</td><td>Liam Lawson</td><td>🇳🇿 Nova Zelândia</td><td>RB</td></tr>
-      <tr><td>24</td><td>Zhou Guanyu</td><td>🇨🇳 China</td><td>Kick Sauber</td></tr>
-      <tr><td>23</td><td>Alex Albon</td><td>🇹🇭 Tailândia</td><td>Williams</td></tr>
-      <tr><td>77</td><td>Valtteri Bottas</td><td>🇫🇮 Finlândia</td><td>Haas</td></tr>
-      <tr><td>11</td><td>Sergio Pérez</td><td>🇲🇽 México</td><td>Red Bull Racing</td></tr>
+        <tr><td>Max Verstappen</td><td>🇳🇱 Holanda</td><td>Red Bull Racing</td></tr>
+        <tr><td>Sergio Pérez</td><td>🇲🇽 México</td><td>Red Bull Racing</td></tr>
+
+        <tr><td>Lewis Hamilton</td><td>🇬🇧 Reino Unido</td><td>Ferrari</td></tr>
+        <tr><td>Charles Leclerc</td><td>🇲🇨 Mônaco</td><td>Ferrari</td></tr>
+
+        <tr><td>Lando Norris</td><td>🇬🇧 Reino Unido</td><td>McLaren</td></tr>
+        <tr><td>Oscar Piastri</td><td>🇦🇺 Austrália</td><td>McLaren</td></tr>
+
+        <tr><td>George Russell</td><td>🇬🇧 Reino Unido</td><td>Mercedes</td></tr>
+        <tr><td>Andrea Kimi Antonelli</td><td>🇮🇹 Itália</td><td>Mercedes</td></tr>
+
+        <tr><td>Carlos Sainz</td><td>🇪🇸 Espanha</td><td>Williams</td></tr>
+        <tr><td>Alex Albon</td><td>🇹🇭 Tailândia</td><td>Williams</td></tr>
+
+        <tr><td>Fernando Alonso</td><td>🇪🇸 Espanha</td><td>Aston Martin</td></tr>
+        <tr><td>Lance Stroll</td><td>🇨🇦 Canadá</td><td>Aston Martin</td></tr>
+
+        <tr><td>Nico Hülkenberg</td><td>🇩🇪 Alemanha</td><td>Kick Sauber</td></tr>
+        <tr><td>Zhou Guanyu</td><td>🇨🇳 China</td><td>Kick Sauber</td></tr>
+
+        <tr><td>Yuki Tsunoda</td><td>🇯🇵 Japão</td><td>RB</td></tr>
+        <tr><td>Liam Lawson</td><td>🇳🇿 Nova Zelândia</td><td>RB</td></tr>
+
+        <tr><td>Valtteri Bottas</td><td>🇫🇮 Finlândia</td><td>Haas</td></tr>
+        <tr><td>Kevin Magnussen</td><td>🇩🇰 Dinamarca</td><td>Haas</td></tr>
+
+      </tbody>
     </table>
-  </div>
-
-</div>
-
-<footer class="footer">© 2025 Blog MLK F1 — Todos os direitos reservados.</footer>
-
-</body>
-</html>          <tr>
-            <td>4</td>
-            <td>🇲🇨 Charles Leclerc</td>
-            <td>Ferrari</td>
-            <td>268</td>
-          </tr>
-
-          <tr>
-            <td>5</td>
-            <td>🇦🇺 Oscar Piastri</td>
-            <td>McLaren</td>
-            <td>244</td>
-          </tr>
-
-          <tr>
-            <td>6</td>
-            <td>🇬🇧 George Russell</td>
-            <td>Mercedes</td>
-            <td>210</td>
-          </tr>
-
-          <tr>
-            <td>7</td>
-            <td>🇬🇧 Lewis Hamilton</td>
-            <td>Mercedes</td>
-            <td>188</td>
-          </tr>
-
-          <tr>
-            <td>8</td>
-            <td>🇯🇵 Yuki Tsunoda</td>
-            <td>VCARB</td>
-            <td>121</td>
-          </tr>
-
-          <tr>
-            <td>9</td>
-            <td>🇨🇦 Lance Stroll</td>
-            <td>Aston Martin</td>
-            <td>94</td>
-          </tr>
-
-          <tr>
-            <td>10</td>
-            <td>🇪🇸 Fernando Alonso</td>
-            <td>Aston Martin</td>
-            <td>88</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
   </section>
+
 </main>
 
 <footer class="footer">
   <p>F1Naticos © 2025 · Conteúdo independente</p>
 </footer>
-
-<style>
-/* Ajustes da tabela dentro do tema */
-.tabela-wrapper {
-  overflow-x: auto;
-  margin-top: 15px;
-}
-
-.tabela {
-  width: 100%;
-  border-collapse: collapse;
-  background: #0f1522;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.tabela th {
-  background: #ff4d00;
-  color: white;
-  padding: 12px;
-  text-align: left;
-}
-
-.tabela td {
-  padding: 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-}
-
-.tabela tr:hover {
-  background: rgba(255, 77, 0, 0.1);
-}
-</style>
 
 </body>
 </html>
