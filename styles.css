@@ -118,3 +118,20 @@ body {
 }
 
 .me
+
+.logo-square {
+  display: inline-block;
+  width: 32px;  /* tamanho fixo */
+  height: 32px;
+  margin-left: 8px;
+  background: #00000022;
+  border-radius: 6px;
+  padding: 3px;
+  vertical-align: middle;
+}
+
+.logo-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
