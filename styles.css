@@ -120,3 +120,7 @@ body {
   display: flex;
   align-items: center;
 }
+/* Corrige o scroll dos links do menu */
+#historia, #pilotos, #noticias {
+  scroll-margin-top: 90px; /* altura do header */
+}
