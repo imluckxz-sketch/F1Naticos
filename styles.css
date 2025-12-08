@@ -140,3 +140,6 @@ body {
   padding: 12px 15px; /* aumenta o espaço interno das células */
   text-align: center;
 }
+.logo {
+  color: var(--accent) !important; /* força a cor laranja */
+}
