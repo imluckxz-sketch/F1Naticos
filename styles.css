@@ -1,4 +1,34 @@
 /* ===========================
+   VARIÁVEIS E BASE
+=========================== */
+:root {
+  --bg: #0c111b;
+  --card: #121824;
+  --accent: #ff4d00;
+  --text: #e6eef6;
+  --muted: #98a2b3;
+  --radius: 12px;
+  --container: 1100px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+.container {
+  width: calc(100% - 40px);
+  max-width: var(--container);
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* ===========================
    HEADER
 =========================== */
 .header {
@@ -11,29 +41,30 @@
 }
 
 .header-content {
-  display: flex;           /* Alinha logo, título e menu lado a lado */
-  align-items: center;     /* Centraliza verticalmente */
-  justify-content: space-between; /* Espaço entre logo/título e menu */
-  gap: 10px;               /* Espaço entre logo e título */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Logo como imagem */
-.logo-square {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  display: block;
-}
-
-/* Logo em texto */
+/* LOGO TEXTO OU LOGO IMAGEM */
 .logo {
+  margin: 0;
   font-size: 1.4rem;
   color: var(--accent);
   font-weight: 700;
-  margin: 0;
 }
 
-/* Menu de navegação */
+.logo-square {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: contain;
+  display: block;
+}
+}
+
+/* ===========================
+   NAV MENU
+=========================== */
 .nav {
   display: flex;
   align-items: center;
@@ -44,7 +75,7 @@
   margin-left: 20px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.2s;
+  transition: .2s;
 }
 
 .nav a:hover,
@@ -52,21 +83,38 @@
   color: var(--text);
 }
 
-/* ===========================
-   RESPONSIVIDADE
-=========================== */
-@media (max-width: 600px) {
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  .logo-square {
-    width: 32px;
-    height: 32px;
-  }
-
-  .nav a {
-    margin-left: 12px;
-    font-size: 0.9rem;
-  }
+/* Corrige scroll ao clicar no menu */
+#historia, #pilotos, #noticias {
+  scroll-margin-top: 90px;
 }
+
+/* ===========================
+   HERO / DESTAQUE
+=========================== */
+.hero {
+  background: linear-gradient(90deg, rgba(255, 77, 0, 0.1), transparent);
+  padding: 25px;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  margin: 0 0 8px 0;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 22px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.me
