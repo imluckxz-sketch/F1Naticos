@@ -108,3 +108,10 @@ body {
 .leia-mais:hover {
   color: #ff6a2a;
 }
+
+/* Logo quadrada maior */
+.logo-square {
+  width: 40px;
+  height: 40px;
+}
+
