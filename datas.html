@@ -14,25 +14,47 @@
       margin-top: 30px;
     }
 
-    table {
+    .calendar-table {
       width: 100%;
       border-collapse: collapse;
       color: var(--text);
+      font-size: 0.98rem;
     }
 
-    th, td {
-      padding: 12px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+    .calendar-table th,
+    .calendar-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
       text-align: left;
+      vertical-align: middle;
     }
 
-    th {
+    .calendar-table th {
       color: var(--accent);
-      font-size: 1.1rem;
+      font-weight: 700;
+      font-size: 1rem;
     }
 
-    tr:hover {
-      background: rgba(255, 77, 0, 0.08);
+    .calendar-table tbody tr:hover {
+      background: rgba(255, 77, 0, 0.06);
+    }
+
+    /* responsividade */
+    @media (max-width: 720px) {
+      .calendar-table thead { display: none; }
+      .calendar-table, .calendar-table tbody, .calendar-table tr, .calendar-table td { display: block; width: 100%; }
+      .calendar-table tr { margin-bottom: 12px; }
+      .calendar-table td { padding-left: 50%; position: relative; }
+      .calendar-table td:before {
+        position: absolute;
+        left: 16px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: 600;
+      }
+      .calendar-table td:nth-of-type(1):before { content: "Data"; }
+      .calendar-table td:nth-of-type(2):before { content: "Local (Pista — País)"; }
+      .calendar-table td:nth-of-type(3):before { content: "Vencedor"; }
     }
   </style>
 </head>
@@ -44,7 +66,6 @@
     <h1 class="logo">F1Naticos</h1>
 
     <nav class="nav">
-      <a href="index.html">Início</a>
       <a href="pistas.html">Pistas da F1</a>
       <a href="datas.html">Datas das Corridas</a>
     </nav>
@@ -57,17 +78,24 @@
   <h2>Calendário da Temporada 2025</h2>
 
   <div class="table-card">
-    <table>
-      <tr>
-        <th>Data</th>
-        <th>Local</th>
-        <th>Vencedor</th>
-      </tr>
-
-      <tr><td>02/03</td><td>Bahrein – Sakhir, Bahrein</td><td>—</td></tr>
-      <tr><td>09/03</td><td>Arábia Saudita – Jeddah, Arábia Saudita</td><td>—</td></tr>
-      <tr><td>16/03</td><td>Austrália – Melbourne, Austrália</td><td>—</td></tr>
-      <tr><td>23/03</td><td>China – Xangai, China</td><td>—</td></tr>
+    <table class="calendar-table" aria-label="Calendário F1 2025">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Local (Pista — País)</th>
+          <th>Vencedor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>16/03</td><td>Austrália — Melbourne (Albert Park)</td><td>Lando Norris</td></tr>
+        <tr><td>23/03</td><td>China — Xangai (Shanghai International Circuit)</td><td>Oscar Piastri</td></tr>
+        <tr><td>06/04</td><td>Japão — Suzuka (Suzuka Circuit)</td><td>Max Verstappen</td></tr>
+        <tr><td>13/04</td><td>Bahrein — Sakhir (Bahrain International Circuit)</td><td>Oscar Piastri</td></tr>
+        <tr><td>20/04</td><td>Arábia Saudita — Jeddah (Jeddah Corniche Circuit)</td><td>Oscar Piastri</td></tr>
+        <tr><td>04/05</td><td>EUA — Miami (Miami International Autodrome)</td><td>Oscar Piastri</td></tr>
+        <tr><td>18/05</td><td>Emília-Romagna — Imola (Autodromo Enzo e Dino Ferrari)</td><td>Max Verstappen</td></tr>
+        <tr><td>25/05</td><td>Mônaco — Monte Carlo (Circuit de Monaco)</td><td>Lando Norris</td></tr>
+        <tr><td>      <tr><td>23/03</td><td>China – Xangai, China</td><td>—</td></tr>
       <tr><td>06/04</td><td>Japão – Suzuka, Japão</td><td>—</td></tr>
       <tr><td>13/04</td><td>Barein II – Sakhir, Bahrein</td><td>—</td></tr>
       <tr><td>27/04</td><td>Emília-Romanha – Imola, Itália</td><td>—</td></tr>
