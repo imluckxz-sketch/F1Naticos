@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Ranking F1 2025</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* ===== ESTILO DAS ABAS ===== */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background: #121824;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.tab-btn {
+  padding: 15px 35px;
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  color: var(--text);
+  border-bottom: 3px solid var(--accent);
+}
+
+/* ===== TABELAS ===== */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th {
+  text-align: left;
+  padding: 12px;
+  background: #181f2d;
+  color: var(--text);
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: var(--muted);
+}
+
+.flag {
+  width: 22px;
+  height: 14px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="container header-content">
+    <h1 class="logo">MLK Racing</h1>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="datas.html">Corridas</a>
+      <a href="rank.html">Ranking</a>
+    </nav>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab-btn active" onclick="openTab('pilotos')">PILOTOS</div>
+  <div class="tab-btn" onclick="openTab('fabricantes')">FABRICANTES</div>
+</div>
+
+<div class="container">
+
+  <!-- ======== PILOTOS ======== -->
+  <div id="pilotos" class="tab-content active">
+    <h2>Classificação de 2025</h2>
+
+    <table>
+      <tr>
+        <th>Pos.</th>
+        <th>Piloto</th>
+        <th>Pontos</th>
+        <th>Vitórias</th>
+        <th>Pódios</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td><img class="flag" src="https://flagsapi.com/GB/flat/64.png">L. Norris</td>
+        <td>423</td><td>7</td><td>18</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td><img class="flag" src="https://flagsapi.com/NL/flat/64.png">M. Verstappen</td>
+        <td>421</td><td>8</td><td>15</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td><img class="flag" src="https://flagsapi.com/AU/flat/64.png">O. Piastri</td>
+        <td>410</td><td>7</td><td>16</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td><img class="flag" src="https://flagsapi.com/GB/flat/64.png">G. Russell</td>
+        <td>319</td><td>2</td><td>9</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td><img class="flag" src="https://flagsapi.com/MC/flat/64.png">C. Leclerc</td>
+        <td>242</td><td>0</td><td>7</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ======== FABRICANTES ======== -->
+  <div id="fabricantes" class="tab-content">
+    <h2>Classificação de 2025</h2>
+
+    <table>
+      <tr>
+        <th>Pos.</th>
+        <th>Fabricante</th>
+        <th>Pontos</th>
+        <th>Vitórias</th>
+        <th>Pódios</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>McLaren</td>
+        <td>833</td><td>14</td><td>34</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Mercedes</td>
+        <td>469</td><td>2</td><td>12</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Red Bull</td>
+        <td>451</td><td>8</td><td>15</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Ferrari</td>
+        <td>398</td><td>0</td><td>7</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>Williams</td>
+        <td>137</td><td>0</td><td>2</td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+<script>
+function openTab(tabName) {
+  document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
+  document.querySelectorAll(".tab-content").forEach(tab => tab.classList.remove("active"));
+
+  event.target.classList.add("active");
+  document.getElementById(tabName).classList.add("active");
+}
+</script>
+
+</body>
+</html>
