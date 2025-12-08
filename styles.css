@@ -200,3 +200,22 @@ body {
     padding: 10px;
   }
 }
+/* Centralizar todo o conteúdo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; /* Centraliza TODO o texto da tabela */
+}
+
+/* Centraliza os títulos (cabeçalho) */
+th {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Centraliza o conteúdo das linhas */
+td {
+    text-align: center;
+    padding: 8px;
+}
