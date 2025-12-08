@@ -46,21 +46,21 @@ body {
   align-items: center;
 }
 
-/* LOGO TEXTO OU LOGO IMAGEM */
-.logo {
-  margin: 0;
-  font-size: 1.4rem;
-  color: var(--accent);
-  font-weight: 700;
+/* Ajuste definitivo da logo */
+.logo-square {
+  display: inline-block;
+  width: 40px;  /* tamanho fixo */
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px; /* espaço entre logo e título */
 }
 
-.logo-square {
-  width: 40px !important;
-  height: 40px !important;
+.logo-square img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  display: block;
 }
-}
+
 
 /* ===========================
    NAV MENU
