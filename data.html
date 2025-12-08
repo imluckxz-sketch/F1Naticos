@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datas da Temporada F1 2025</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário 2025 – F1Naticos</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="header">
   <div class="container header-content">
-    <img src="img/mlk.png" alt="Logo MLK" class="logo-square">
+    <h1 class="logo">
+      F1Naticos
+      <span class="logo-square">
+        <img src="imgs/mlk.png.png" alt="Logo MLK">
+      </span>
+    </h1>
 
     <nav class="nav">
       <a href="index.html">Início</a>
-      <a href="rank.html">Tabela</a>
-      <a href="data.html">Calendário</a>
+      <a class="active" href="datas.html">Calendário</a>
+      <a href="tabela.html">Tabela</a>
     </nav>
   </div>
 </header>
 
-<div class="container">
+<main class="container">
 
-  <section class="hero">
-    <h2>Calendário Oficial da Fórmula 1 — 2025</h2>
-    <p>A temporada 2025 contará com 24 corridas ao redor do mundo, começando no Bahrein e terminando em Abu Dhabi.</p>
+  <section class="card">
+    <h2>Calendário da Temporada 2025</h2>
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>GP</th>
+          <th>Local</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr><td>02 de março</td><td>GP do Bahrein</td><td>Sakhir 🇧🇭</td></tr>
+        <tr><td>09 de março</td><td>GP da Arábia Saudita</td><td>Jeddah 🇸🇦</td></tr>
+        <tr><td>23 de março</td><td>GP da Austrália</td><td>Melbourne 🇦🇺</td></tr>
+        <tr><td>06 de abril</td><td>GP do Japão</td><td>Suzuka 🇯🇵</td></tr>
+        <tr><td>20 de abril</td><td>GP da China</td><td>Shanghai 🇨🇳</td></tr>
+        <tr><td>04 de maio</td><td>GP de Miami</td><td>Miami 🇺🇸</td></tr>
+        <tr><td>18 de maio</td><td>GP da Emilia-Romagna</td><td>Imola 🇮🇹</td></tr>
+        <tr><td>25 de maio</td><td>GP de Mônaco</td><td>Monte Carlo 🇲🇨</td></tr>
+        <tr><td>01 de junho</td><td>GP da Espanha</td><td>Barcelona 🇪🇸</td></tr>
+        <tr><td>15 de junho</td><td>GP do Canadá</td><td>Montreal 🇨🇦</td></tr>
+        <tr><td>29 de junho</td><td>GP da Áustria</td><td>Spielberg 🇦🇹</td></tr>
+        <tr><td>06 de julho</td><td>GP do Reino Unido</td><td>Silverstone 🇬🇧</td></tr>
+        <tr><td>20 de julho</td><td>GP da Hungria</td><td>Budapeste 🇭🇺</td></tr>
+        <tr><td>27 de julho</td><td>GP da Bélgica</td><td>Spa 🇧🇪</td></tr>
+        <tr><td>03 de agosto</td><td>GP dos Países Baixos</td><td>Zandvoort 🇳🇱</td></tr>
+        <tr><td>31 de agosto</td><td>GP da Itália</td><td>Monza 🇮🇹</td></tr>
+        <tr><td>14 de setembro</td><td>GP do Azerbaijão</td><td>Baku 🇦🇿</td></tr>
+        <tr><td>21 de setembro</td><td>GP de Singapura</td><td>Marina Bay 🇸🇬</td></tr>
+        <tr><td>05 de outubro</td><td>GP dos EUA</td><td>Austin 🇺🇸</td></tr>
+        <tr><td>19 de outubro</td><td>GP do México</td><td>CDMX 🇲🇽</td></tr>
+        <tr><td>26 de outubro</td><td>GP do Brasil</td><td>Interlagos 🇧🇷</td></tr>
+        <tr><td>09 de novembro</td><td>GP de Las Vegas</td><td>Las Vegas 🇺🇸</td></tr>
+        <tr><td>23 de novembro</td><td>GP do Catar</td><td>Lusail 🇶🇦</td></tr>
+        <tr><td>30 de novembro</td><td>GP de Abu Dhabi</td><td>Yas Marina 🇦🇪</td></tr>
+
+      </tbody>
+    </table>
   </section>
 
-  <div class="card" id="calendario">
-    <h2>📅 Corridas da Temporada 2025</h2>
+</main>
 
-    <ul>
-      <li><strong>01 – GP do Bahrein:</strong> 14–16 de março</li>
-      <li><strong>02 – GP da Arábia Saudita:</strong> 21–23 de março</li>
-      <li><strong>03 – GP da Austrália:</strong> 4–6 de abril</li>
-      <li><strong>04 – GP do Japão:</strong> 11–13 de abril</li>
-      <li><strong>05 – GP da China:</strong> 18–20 de abril</li>
-      <li><strong>06 – GP de Miami:</strong> 2–4 de maio</li>
-      <li><strong>07 – GP da Itália (Ímola):</strong> 16–18 de maio</li>
-      <li><strong>08 – GP de Mônaco:</strong> 23–25 de maio</li>
-      <li><strong>09 – GP do Canadá:</strong> 6–8 de junho</li>
-      <li><strong>10 – GP da Espanha:</strong> 20–22 de junho</li>
-      <li><strong>11 – GP da Áustria:</strong> 27–29 de junho</li>
-      <li><strong>12 – GP do Reino Unido:</strong> 4–6 de julho</li>
-      <li><strong>13 – GP da Hungria:</strong> 25–27 de julho</li>
-      <li><strong>14 – GP da Bélgica:</strong> 1–3 de agosto</li>
-      <li><strong>15 – GP da Holanda:</strong> 22–24 de agosto</li>
-      <li><strong>16 – GP da Itália (Monza):</strong> 5–7 de setembro</li>
-      <li><strong>17 – GP do Azerbaijão:</strong> 19–21 de setembro</li>
-      <li><strong>18 – GP de Singapura:</strong> 3–5 de outubro</li>
-      <li><strong>19 – GP dos EUA (Austin):</strong> 17–19 de outubro</li>
-      <li><strong>20 – GP do México:</strong> 24–26 de outubro</li>
-      <li><strong>21 – GP do Brasil:</strong> 7–9 de novembro</li>
-      <li><strong>22 – GP de Las Vegas:</strong> 20–22 de novembro</li>
-      <li><strong>23 – GP do Catar:</strong> 28–30 de novembro</li>
-      <li><strong>24 – GP de Abu Dhabi:</strong> 5–7 de dezembro</li>
-    </ul>
-  </div>
-
-</div>
-
-<footer class="footer">© 2025 Blog MLK F1 — Todos os direitos reservados.</footer>
+<footer class="footer">
+  <p>F1Naticos © 2025 · Conteúdo independente</p>
+</footer>
 
 </body>
 </html>
