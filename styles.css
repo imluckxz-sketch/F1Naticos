@@ -135,3 +135,8 @@ body {
   height: 100%;
   object-fit: contain;
 }
+.tabela-f1 th,
+.tabela-f1 td {
+  padding: 12px 15px; /* aumenta o espaço interno das células */
+  text-align: center;
+}
