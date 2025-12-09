@@ -423,3 +423,33 @@ body {
     padding: 10px;
   }
 }
+/* ===========================
+   BRILHO MAIS FORTE NO LARANJA
+=========================== */
+
+/* Torna o laranja mais vivo */
+:root {
+  --accent: #ff5a00; /* brilho + saturação maior */
+  --accent-hover: #ff7a33; /* um pouco mais claro no hover */
+}
+
+/* Brilho sutil nos textos/accent */
+.nav a:hover,
+.nav a.active,
+.hero h2,
+.card h2,
+.news h3,
+.leia-mais,
+.logo {
+  text-shadow: 0 0 6px rgba(255, 90, 0, 0.7);
+}
+
+/* Glow em bordas e botões */
+.leia-mais:hover {
+  box-shadow: 0 0 14px rgba(255, 90, 0, 0.9);
+}
+
+/* Glow em linhas decorativas */
+.nav a:hover::after {
+  box-shadow: 0 0 8px rgba(255, 90, 0, 0.9);
+}
